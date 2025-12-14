@@ -1,0 +1,70 @@
+=== CORPORATE TO-DO APPLICATION ===
+Installation Instructions
+
+STEP 1: Install Node.js
+-----------------------
+If you don't have Node.js installed:
+1. Download from: https://nodejs.org/
+2. Install the LTS version
+3. Restart your computer
+
+STEP 2: Run Installation
+-------------------------
+Option A (Automatic - Windows):
+   Double-click "install.bat" file
+
+Option B (Manual):
+   Open Command Prompt in this folder and run:
+   1. npm install
+   2. node create-backend.js
+   3. node create-frontend.js
+   4. node create-styles.js
+   5. node create-app-js.js
+   6. npm run init-db
+
+STEP 3: Start the Application
+------------------------------
+   npm start
+
+STEP 4: Access the Application
+-------------------------------
+   Open your browser: http://localhost:3000
+
+DEMO ACCOUNTS:
+--------------
+Email: admin@company.com | Password: password123
+Email: john@company.com | Password: password123
+Email: jane@company.com | Password: password123
+Email: mike@company.com | Password: password123
+
+FOR TEAM ACCESS (Network):
+---------------------------
+1. Find your PC's IP address (run: ipconfig)
+2. Edit public/app.js - change API_URL to:
+   const API_URL = 'http://YOUR_IP_ADDRESS:3000/api';
+3. Make sure port 3000 is open in firewall
+4. Team members access: http://YOUR_IP_ADDRESS:3000
+
+FEATURES:
+---------
+✓ User registration and login
+✓ Create, edit, delete tasks
+✓ Assign tasks to team members
+✓ Set priorities (Low, Medium, High)
+✓ Track status (To Do, In Progress, Done)
+✓ Set due dates
+✓ Filter tasks by status
+✓ Corporate Microsoft To-Do style UI
+
+TROUBLESHOOTING:
+----------------
+Problem: Port 3000 already in use
+Solution: Edit .env file, change PORT=3000 to PORT=3001
+
+Problem: Cannot connect
+Solution: Check if server is running with "npm start"
+
+Problem: Database error
+Solution: Delete database.db and run "npm run init-db"
+
+For full documentation, see README_FULL.md
